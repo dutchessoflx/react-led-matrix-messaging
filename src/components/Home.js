@@ -1,7 +1,7 @@
 import React from 'react';
 import MessageHistory from './MessageHistory';
 import axios from 'axios';
-import {  Box,Container,PageContent,Button, Input, InputField } from 'bumbag';
+import {  Box,Container,PageContent,Button, Input } from 'bumbag';
 
 const RAILS_LEDMATRIX_BASE = 'http://localhost:3000/messages'
 
@@ -14,7 +14,9 @@ class Home extends React.Component{
     }
 
     handleChange = (ev) => {
+      console.log('message', ev.target.value);
       this.setState({message: ev.target.value});
+      console.log(this.state.message);
     }
 
     handleSubmit = (ev) =>{
@@ -42,8 +44,9 @@ class Home extends React.Component{
         <Container breakpoint="mobile" marginTop="major-2">
           <Box backgroundColor="whitesmoke" padding="0.5rem">
             <form onSubmit= {this.handleSubmit}>
-            <InputField alignX="center" border="default"label="Write a Message" placeholder="Enter your message here..." />
-            <Button alignX="center" border="default">Send your Message to the Matrix</Button>
+          
+            <Input onChange={this.handleChange} alignX="center" border="default" label="Write a Message" placeholder="Enter your message here..." />
+            <button alignX="center" border="default">Send your Message to the Matrix</button>
             </form>
 
           </Box>

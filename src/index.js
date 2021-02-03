@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Home from './components/Home';
-import { PageWithHeader, Provider as BumbagProvider } from 'bumbag';
+import { Provider as BumbagProvider } from 'bumbag';
 
 
 import reportWebVitals from './reportWebVitals';
@@ -12,7 +12,7 @@ ReactDOM.render(
   <React.StrictMode>
 
       <Home/>
-  
+
   </React.StrictMode>
 </BumbagProvider>,
   document.getElementById('root')

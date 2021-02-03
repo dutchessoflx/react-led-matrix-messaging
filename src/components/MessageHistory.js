@@ -23,7 +23,7 @@ class MessageHistory extends React.Component{
 
   componentDidMount(){
     this.fetchMessages();
-    window.setInterval(this.fetchMessages, 50000);
+    window.setInterval(this.fetchMessages, 2000);
   }
 
   // saveMessage = (content) =>{
@@ -54,7 +54,8 @@ class MessageHistory extends React.Component{
             <Table.Body>
 
                   {
-                    this.state.messages.map(message => <Table.Row><Table.Cell key='{message.id}'>{message.message_content}</Table.Cell><Table.Cell key='{message.id}' textAlign="right">{message.created_at}</Table.Cell></Table.Row>)
+                    this.state.messages.map(message => <Table.Row><Table.Cell key={message.message_content}>{message.message_content}</Table.Cell>
+                    <Table.Cell key={message.created_at} textAlign="right">{message.created_at}</Table.Cell></Table.Row>)
 
                   }
 
