@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import { Table } from 'bumbag'
+import Time from 'react-time-format'
 // import Home from './Home';
 const RAILS_LEDMATRIX_BASE = 'http://localhost:3000/messages'
 
@@ -54,7 +55,7 @@ const MessageHistory = (props)=> {
                           {message.message_content}
                         </Table.Cell>
                         <Table.Cell color="black" key={message.created_at} textAlign="right">
-                          {message.created_at}
+                          {new Date(message.created_at).toLocaleString()}
                         </Table.Cell>
                       </Table.Row>)
 
