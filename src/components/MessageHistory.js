@@ -43,25 +43,27 @@ class MessageHistory extends React.Component{
 
       return (
           <div >
-          Message History
+            <div id='history'>
+          <h4>Message History</h4>
           <Table isStriped>
             <Table.Head>
-                <Table.Row>
-                  <Table.HeadCell>Message Contents</Table.HeadCell>
-                  <Table.HeadCell textAlign="right"> Date/Time Sent</Table.HeadCell>
+                <Table.Row >
+                  <Table.HeadCell color="black">Message Contents</Table.HeadCell>
+                  <Table.HeadCell color="black" textAlign="right"> Date/Time Sent</Table.HeadCell>
                 </Table.Row>
             </Table.Head>
             <Table.Body>
 
                   {
-                    this.state.messages.map(message => <Table.Row><Table.Cell key={message.message_content}>{message.message_content}</Table.Cell>
-                    <Table.Cell key={message.created_at} textAlign="right">{message.created_at}</Table.Cell></Table.Row>)
+                    this.state.messages.map(message => <Table.Row><Table.Cell color="black" key={message.message_content}>{message.message_content}</Table.Cell>
+                    <Table.Cell color="black" key={message.created_at} textAlign="right">{message.created_at}</Table.Cell></Table.Row>)
 
                   }
 
 
             </Table.Body>
           </Table>
+        </div>
         </div>
 
         );

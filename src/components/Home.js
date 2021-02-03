@@ -42,11 +42,17 @@ class Home extends React.Component{
       return (
         <div>
         <Container breakpoint="mobile" marginTop="major-2">
-          <Box backgroundColor="whitesmoke" padding="0.5rem">
+          <Box borderRadius="20px" alignY="center" backgroundColor="rgba(46, 120, 125, 0.67)" padding="1rem">
             <form onSubmit= {this.handleSubmit}>
-          
-            <Input onChange={this.handleChange} alignX="center" border="default" label="Write a Message" placeholder="Enter your message here..." />
-            <button alignX="center" border="default">Send your Message to the Matrix</button>
+
+            <Input marginBottom="10px"
+              onChange={this.handleChange}
+              alignX="center"
+              borderRadius="20px"
+              label="Write a Message"
+              backgroundColor="rgba(46, 120, 125, 0.67)"
+              placeholder="Enter your message here..." />
+            <button id='post'>Send your Message to the Matrix</button>
             </form>
 
           </Box>

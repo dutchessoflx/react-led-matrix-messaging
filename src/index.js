@@ -1,17 +1,47 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Home from './components/Home';
-import { Provider as BumbagProvider } from 'bumbag';
-
-
 import reportWebVitals from './reportWebVitals';
+import Home from './components/Home';
+import { PageWithHeader, Provider as BumbagProvider, css } from 'bumbag';
+
+const theme = {
+  global: {
+    fontSize: 20,
+    styles: {
+      base: css`
+        html,
+        body {
+          background-color: rgba(100, 46, 125, 0.7);
+          color: white;
+        }
+        h2{
+          background-color: rgba(100, 46, 125, 0.7);
+
+        }
+      #post{
+        background-color: white;
+        color: rgba(46, 120, 125, 0.81);
+      }
+      #history{
+        text-align: center;
+        color: black;
+        background-color: rgba(46, 120, 125, 0.81);
+        padding: 10px;
+        border-radius: 20px;
+      }
+      `
+    }
+  }
+}
 
 ReactDOM.render(
-  <BumbagProvider>
+  <BumbagProvider theme={theme}>
   <React.StrictMode>
-
+  <PageWithHeader
+      header={ <h2>LED Messaging Service</h2>}>
       <Home/>
+    </PageWithHeader>
 
   </React.StrictMode>
 </BumbagProvider>,

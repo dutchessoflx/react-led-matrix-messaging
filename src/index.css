@@ -12,3 +12,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h2{
+  text-align: center;
+  margin-top: 2rem;
+  color: rgba(46, 120, 125);
+}
+
+#post{
+  margin-left: 23%;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 20px;
+
+}
+
+input{
+  border-radius: 20px;
+}
