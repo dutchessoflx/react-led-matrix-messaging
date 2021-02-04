@@ -14,6 +14,8 @@ const theme = {
         body {
           background-color: rgba(100, 46, 125, 0.7);
           color: white;
+          font-family: 'LED Dot' !important;
+          src: local('LED Dot'), url('./fonts/LED Dot-Matrix.ttf')format('truetype');
         }
         h2{
           background-color: rgba(100, 46, 125, 0.7);

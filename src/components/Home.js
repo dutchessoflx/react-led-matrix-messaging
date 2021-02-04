@@ -2,8 +2,11 @@ import React, {useState} from 'react';
 import MessageHistory from './MessageHistory';
 import axios from 'axios';
 import {  Box,Container,PageContent,Button, Input } from 'bumbag';
+import '../App.css';
 
-const RAILS_LEDMATRIX_BASE = 'http://localhost:3000/messages'
+// const RAILS_LEDMATRIX_BASE = 'http://localhost:3000/messages'
+const RAILS_LEDMATRIX_BASE = 'https://647ba0d71fed.ngrok.io/messages'
+
 
 
 
@@ -12,18 +15,25 @@ const Home = (props) => {
     const [lastMessage, setLastMessage] = useState('');
 
     const handleChange = (ev) => {
-      console.log('message', ev.target.value);
+      // console.log('message', ev.target.value);
       setMessage(ev.target.value);
-      console.log(message);
+      // console.log(message);
     }
 
     const handleSubmit = (ev) =>{
       ev.preventDefault();
       console.log("message", message);
+
+
+      if(message === ''){
+        console.log("message is null");
+        return
+      }
+      // console.log("message", message);
       axios.post(RAILS_LEDMATRIX_BASE,{message_content: message})
         .then((res) =>{
-          console.log(res.data);
-          console.log(res.data.message_content);
+          // console.log(res.data);
+          // console.log(res.data.message_content);
 
           setLastMessage(res.data);
         })

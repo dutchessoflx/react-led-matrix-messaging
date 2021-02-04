@@ -3,17 +3,19 @@ import axios from 'axios';
 import { Table } from 'bumbag'
 import Time from 'react-time-format'
 // import Home from './Home';
-const RAILS_LEDMATRIX_BASE = 'http://localhost:3000/messages'
+// const RAILS_LEDMATRIX_BASE = 'http://localhost:3000/messages'
+const RAILS_LEDMATRIX_BASE = 'https://647ba0d71fed.ngrok.io/messages'
+
 
 const MessageHistory = (props)=> {
 
   const [messages, setMessages] = useState([]);
 
   const fetchMessages = () => {
-    console.log('fetchMessages');
+    // console.log('fetchMessages');
     axios.get(RAILS_LEDMATRIX_BASE)
     .then((res) => {
-      console.log('response', res.data);
+      // console.log('response', res.data);
       setMessages(res.data)
 
     })
@@ -21,12 +23,12 @@ const MessageHistory = (props)=> {
   };
 
   useEffect( () => {
-    console.log("History Component Mounted");
+    // console.log("History Component Mounted");
     fetchMessages();
   }, []);
 
   useEffect( () => {
-    console.log("Last message", props.lastMessage);
+    // console.log("Last message", props.lastMessage);
     setMessages([props.lastMessage, ...messages])
   }, [props.lastMessage]);
 

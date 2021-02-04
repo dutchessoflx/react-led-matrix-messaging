@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap');
 body{
-  font-family: 'Raleway Dots', sans-serif;
+  font-family: 'LED Dot' !important;
+  src: local('LED Dot'), url('./fonts/LED Dot-Matrix.ttf')format('truetype');
 }
 
 
 .App {
   text-align: center;
+  font-family: 'LED Dot' !important;
+  src: local('LED Dot'), url('./fonts/LED Dot-Matrix.ttf')format('truetype');
 
 }
 
