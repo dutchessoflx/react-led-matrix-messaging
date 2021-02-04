@@ -4,7 +4,8 @@ import { Table } from 'bumbag'
 import Time from 'react-time-format'
 // import Home from './Home';
 // const RAILS_LEDMATRIX_BASE = 'http://localhost:3000/messages'
-const RAILS_LEDMATRIX_BASE = 'https://647ba0d71fed.ngrok.io/messages'
+const RAILS_LEDMATRIX_BASE = 'https://a4e30484543d.ngrok.io/messages'
+// - will change with reboot of ngrok server
 
 
 const MessageHistory = (props)=> {
