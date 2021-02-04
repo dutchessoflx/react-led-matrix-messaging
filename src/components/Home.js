@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 import MessageHistory from './MessageHistory';
 import axios from 'axios';
-import {  Box,Container,PageContent,Button, Input } from 'bumbag';
+import {  Text, Box,Container,PageContent,Button, Input } from 'bumbag';
 import '../App.css';
 
-// const RAILS_LEDMATRIX_BASE = 'http://localhost:3000/messages'
-const RAILS_LEDMATRIX_BASE = 'https://1b750caa58c7.ngrok.io/messages'
+const RAILS_LEDMATRIX_BASE = 'http://localhost:3000/messages'
+// const RAILS_LEDMATRIX_BASE = 'https://1b750caa58c7.ngrok.io/messages'
 // - changes with every reboot of server
 
 
@@ -45,9 +45,16 @@ const Home = (props) => {
       return (
         <div>
         <Container breakpoint="mobile" marginTop="major-2">
+          <h2>LED Messaging Service</h2>
+
           <Box borderRadius="20px" alignY="center" backgroundColor="rgba(46, 120, 125, 0.67)" padding="1rem">
+            <Text.Block >
+
+        <Text align="right" textAlign="right"padding="20px"  fontWeight="bold">Any message you send from here will be transmitted to an Arduino powered 16 x 8 LED Matrix, for it's owner to read. You can choose to add your name to the end of your message, or send it anonomously</Text>
+      </Text.Block>
             <form onSubmit={handleSubmit}>
               <Input marginBottom="10px"
+                marginTop="20px"
                 onChange={handleChange}
                 alignX="center"
                 borderRadius="20px"

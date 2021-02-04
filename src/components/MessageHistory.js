@@ -3,8 +3,8 @@ import axios from 'axios';
 import { Table } from 'bumbag'
 import Time from 'react-time-format'
 // import Home from './Home';
-// const RAILS_LEDMATRIX_BASE = 'http://localhost:3000/messages'
-const RAILS_LEDMATRIX_BASE = 'https://1b750caa58c7.ngrok.io/messages'
+const RAILS_LEDMATRIX_BASE = 'http://localhost:3000/messages'
+// const RAILS_LEDMATRIX_BASE = 'https://1b750caa58c7.ngrok.io/messages'
 // - will change with reboot of ngrok server
 
 

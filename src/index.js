@@ -12,15 +12,12 @@ const theme = {
       base: css`
         html,
         body {
-          background-color: rgba(100, 46, 125, 0.7);
+          background-color: rgba(100, 46, 125, 1);
           color: white;
-          font-family: 'LED Dot' !important;
-          src: local('LED Dot'), url('./fonts/LED Dot-Matrix.ttf')format('truetype');
+          font-family: Andale Mono, monospace;;
+          font-weight: bolder;
         }
-        h2{
-          background-color: rgba(100, 46, 125, 0.7);
 
-        }
       #post{
         background-color: white;
         color: rgba(46, 120, 125, 0.81);
@@ -40,12 +37,8 @@ const theme = {
 ReactDOM.render(
   <BumbagProvider theme={theme}>
   <React.StrictMode>
-  <PageWithHeader
-      header={ <h2>LED Messaging Service</h2>}>
-      <Home/>
-    </PageWithHeader>
-
-  </React.StrictMode>
+        <Home/>
+      </React.StrictMode>
 </BumbagProvider>,
   document.getElementById('root')
 
