@@ -5,7 +5,7 @@ import {  Box,Container,PageContent,Button, Input } from 'bumbag';
 import '../App.css';
 
 // const RAILS_LEDMATRIX_BASE = 'http://localhost:3000/messages'
-const RAILS_LEDMATRIX_BASE = 'https://a4e30484543d.ngrok.io/messages'
+const RAILS_LEDMATRIX_BASE = 'https://1b750caa58c7.ngrok.io/messages'
 // - changes with every reboot of server
 
 
