@@ -3,8 +3,8 @@ import axios from 'axios';
 import { Table } from 'bumbag'
 import Time from 'react-time-format'
 // import Home from './Home';
-const RAILS_LEDMATRIX_BASE = 'http://localhost:3000/messages'
-// const RAILS_LEDMATRIX_BASE = 'https://1b750caa58c7.ngrok.io/messages'
+// const RAILS_LEDMATRIX_BASE = 'http://localhost:3000/messages'
+const RAILS_LEDMATRIX_BASE = 'https://34f24bbb3565.ngrok.io/messages'
 // - will change with reboot of ngrok server
 
 
@@ -21,17 +21,17 @@ const MessageHistory = (props)=> {
 
     })
     .catch(console.warn);
-  };
+  };//fetch messges
 
   useEffect( () => {
     // console.log("History Component Mounted");
     fetchMessages();
-  }, []);
+  }, []); //gets messaqge history when page loads
 
   useEffect( () => {
     // console.log("Last message", props.lastMessage);
     setMessages([props.lastMessage, ...messages])
-  }, [props.lastMessage]);
+  }, [props.lastMessage]); ///keeps track of new messages sent
 
 
 
