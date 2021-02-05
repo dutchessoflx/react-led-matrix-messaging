@@ -1,23 +1,22 @@
 {
   "files": {
-    "main.css": "/react-led-matrix-messaging/static/css/main.a287dfcb.chunk.css",
-    "main.js": "/react-led-matrix-messaging/static/js/main.59f71d9a.chunk.js",
-    "main.js.map": "/react-led-matrix-messaging/static/js/main.59f71d9a.chunk.js.map",
+    "main.css": "/react-led-matrix-messaging/static/css/main.26f6f7d5.chunk.css",
+    "main.js": "/react-led-matrix-messaging/static/js/main.48af9ded.chunk.js",
+    "main.js.map": "/react-led-matrix-messaging/static/js/main.48af9ded.chunk.js.map",
     "runtime-main.js": "/react-led-matrix-messaging/static/js/runtime-main.7b4da63f.js",
     "runtime-main.js.map": "/react-led-matrix-messaging/static/js/runtime-main.7b4da63f.js.map",
-    "static/js/2.43414f58.chunk.js": "/react-led-matrix-messaging/static/js/2.43414f58.chunk.js",
-    "static/js/2.43414f58.chunk.js.map": "/react-led-matrix-messaging/static/js/2.43414f58.chunk.js.map",
+    "static/js/2.3f773211.chunk.js": "/react-led-matrix-messaging/static/js/2.3f773211.chunk.js",
+    "static/js/2.3f773211.chunk.js.map": "/react-led-matrix-messaging/static/js/2.3f773211.chunk.js.map",
     "static/js/3.e1cf2253.chunk.js": "/react-led-matrix-messaging/static/js/3.e1cf2253.chunk.js",
     "static/js/3.e1cf2253.chunk.js.map": "/react-led-matrix-messaging/static/js/3.e1cf2253.chunk.js.map",
     "index.html": "/react-led-matrix-messaging/index.html",
-    "static/css/main.a287dfcb.chunk.css.map": "/react-led-matrix-messaging/static/css/main.a287dfcb.chunk.css.map",
-    "static/js/2.43414f58.chunk.js.LICENSE.txt": "/react-led-matrix-messaging/static/js/2.43414f58.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/react-led-matrix-messaging/static/media/LED Dot-Matrix.262b64fc.ttf"
+    "static/css/main.26f6f7d5.chunk.css.map": "/react-led-matrix-messaging/static/css/main.26f6f7d5.chunk.css.map",
+    "static/js/2.3f773211.chunk.js.LICENSE.txt": "/react-led-matrix-messaging/static/js/2.3f773211.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.7b4da63f.js",
-    "static/js/2.43414f58.chunk.js",
-    "static/css/main.a287dfcb.chunk.css",
-    "static/js/main.59f71d9a.chunk.js"
+    "static/js/2.3f773211.chunk.js",
+    "static/css/main.26f6f7d5.chunk.css",
+    "static/js/main.48af9ded.chunk.js"
   ]
 }
