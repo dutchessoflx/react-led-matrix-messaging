@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-led-matrix-messaging/static/css/main.26f6f7d5.chunk.css",
-    "main.js": "/react-led-matrix-messaging/static/js/main.48af9ded.chunk.js",
-    "main.js.map": "/react-led-matrix-messaging/static/js/main.48af9ded.chunk.js.map",
+    "main.js": "/react-led-matrix-messaging/static/js/main.fefcb062.chunk.js",
+    "main.js.map": "/react-led-matrix-messaging/static/js/main.fefcb062.chunk.js.map",
     "runtime-main.js": "/react-led-matrix-messaging/static/js/runtime-main.7b4da63f.js",
     "runtime-main.js.map": "/react-led-matrix-messaging/static/js/runtime-main.7b4da63f.js.map",
     "static/js/2.3f773211.chunk.js": "/react-led-matrix-messaging/static/js/2.3f773211.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.7b4da63f.js",
     "static/js/2.3f773211.chunk.js",
     "static/css/main.26f6f7d5.chunk.css",
-    "static/js/main.48af9ded.chunk.js"
+    "static/js/main.fefcb062.chunk.js"
   ]
 }
